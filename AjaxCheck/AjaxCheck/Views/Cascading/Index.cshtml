@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["title"] = "Cascading Datas";
+}
+<h1>@ViewData["title"]</h1>
+<hr />
+<div class="container">
+    <div class="card border-primary">
+        <div class="card-header fw-bold border-primary">
+            Cascading Data
+        </div>
+        <div class="row">
+            <div class="col-10 offset-1">
+                <form>
+                    <div class="mb-4">
+                        <label>Country</label>
+                        <select id="country" class="form-control"></select>
+                    </div>                 
+                    <div class="mb-4">
+                        <label>States</label>
+                        <select id="states" class="form-control"></select>
+                    </div>       
+                    <div class="mb-4">
+                        <label>City</label>
+                        <select id="city" class="form-control"></select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/cascadingjs.js"></script>
